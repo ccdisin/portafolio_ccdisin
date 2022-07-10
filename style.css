@@ -3,19 +3,72 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: montserrat;
-
 }
 
+html {
+    font-size: 62.5%;
+}
+
+/*            Normalize             */
+:root {
+    /*   colors     */
+    --primary: rgb(0, 7, 149);
+    --secondary: rgb(255, 255, 255);
+    --alternative: rgb(6, 0, 59);
+    --text-color: rgb(91, 91, 91);
+
+    /*   spacing    */
+    --spacing-large: 6rem;
+    --spacing-medium: 2.4rem;
+    --spacing-small: 2rem;
+    --spacing-xsmall: 1rem;
+
+    /*   font sizes   */
+    --text-large: 5.2em;
+    --text-medium: 2.2em;
+    --text-base: 1.4em;
+    --text-small: 1.4em
+}
+
+/*           Mobile first          */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*  ------INDEX-----------*/
+
+.grid__index {
+    display: grid;
+    grid-template-areas:
+        " header header header"
+        " nav nav nav"
+        " main main main"
+        " precategorias precategorias precategorias "
+        " preview preview preview "
+        " footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 /* ----------- HEADER --------*/
+
 .header {
     background-color: rgb(244, 244, 244);
     color: rgb(228, 226, 226);
-    height: 25rem;
     text-align: center;
     background-image: url(img/fondoheder.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    grid-area: header;
 
 }
 
@@ -24,13 +77,17 @@
     margin: 1.5rem
 }
 
+.header__encabezado {
+    background-color: rgb(6, 44, 75);
+}
+
+
 .header__titulo {
     text-transform: uppercase;
-
     background-color: rgb(6, 44, 75);
     padding-top: 0.5rem;
-    padding-bottom: 0.1rem;
     width: 100%;
+    background-size: cover;
 }
 
 .header__subtitulo {
@@ -43,14 +100,20 @@
     padding-top: 0.1rem;
     padding-bottom: 0.5rem;
     width: 100%;
+    background-size: cover;
 }
 
 .header__menu__lista {
-    list-style: none;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .header__menu__lista1 {
-    display: inline;
+
     padding: 5px 20px 3px 20px;
     background-color: rgb(8, 56, 92);
     margin: 10px;
@@ -60,11 +123,10 @@
     width: 100px;
     text-decoration: none;
     border-radius: 20px;
+
 }
 
-.header__menu__lista a {
-    text-decoration: none;
-}
+
 
 /* ----------- MAIN --------*/
 
@@ -72,52 +134,57 @@ main {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    grid-area: main;
 }
 
-
-
-
 /*-----------PREVIEW-----------*/
+
+/* ------ aqui la idea es seleccionar una categoria y ver una imagen preview de esa categoría, 
+deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto -----*/
+
 .precategoria {
     color: aliceblue;
     background-color: rgb(4, 37, 58);
-    width: 30%;
-    float: left;
-    padding: 2rem;
-    height: 38rem;
+    grid-area: precategorias;
+
 
 }
 
 .precategoria__titulo {
 
     text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.precategoria__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .precategoria__lista li {
-    justify-content: center;
-    text-align: center;
+    border-radius: 20px;
+    border: 1px dashed;
     text-decoration: none;
     list-style: none;
-    padding: 0.5rem;
+    padding: 0.6rem;
+    width: fit-content;
+    margin: 0.5rem;
 
 }
 
 .preview {
     color: aliceblue;
     background-color: rgb(4, 37, 58);
-    width: 70%;
-    float: right;
+    text-align: center;
     padding: 2rem;
-    height: 38rem;
-
+    grid-area: preview;
 }
 
 .preview__img {
-
-    height: 30rem;
-    margin-top: 1.5rem
+    margin-top: 1rem
 }
 
 /*------------FOOTER--------*/
@@ -125,20 +192,8 @@ main {
 .footer {
     background-color: rgb(4, 21, 35);
     text-align: center;
-    padding: 10rem;
-
-
-}
-
-.footer__logo {
-
-    height: 8rem;
-    margin-bottom: 1rem;
-
-}
-
-.footer a {
-    text-decoration: none;
+    grid-area: footer;
+    height: 300px;
 
 }
 
@@ -154,50 +209,241 @@ main {
 }
 
 
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer__menu li {
-    display: inline-block;
     color: aliceblue;
     padding: 5px 20px 5px 20px;
     text-decoration: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: var(--text-base);
+}
 
+.footer__logo {
+    width: 85px;
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+    height: 85px
 }
 
 .footer__pie {
     color: aliceblue;
-    font-size: 10px;
-}
-
-/* ------Seccion de galeria--------*/
-
-.galeria__img {
-    width: 200px;
-    height: 120px;
-    margin: 25px;
+    font-size: var(--text-small);
+    padding-bottom: 0;
+    height: 30px;
 }
 
 
-/*------Sección de contacto -------*/
 
-.formulario {
-    background-color: rgb(5, 24, 56);
-    color: aliceblue;
-    margin-bottom: 80px;
-    margin-left: 25%;
-    padding: 20px;
+/* -------------------SOBRE MI----------------------*/
+
+
+
+
+.grid__sobremi {
+    display: grid;
+    grid-template-areas:
+        " header header header"
+        " nav nav nav"
+        " presentacion presentacion presentacion"
+        " tabla tabla tabla"
+        " footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.presentacion {
+    grid-area: presentacion;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.presentacion__text {
+    font-size: var(--text-small);
+    margin-top: 1rem;
+}
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    grid-area: tabla;
     text-align: center;
-    width: 50%;
+}
+
+.tabla__titulo {
+    margin-bottom: 2rem;
+}
+
+.tabla__tabla {
+    margin: 0;
+    margin-bottom: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+
 
 }
 
-.formulario__elementos {
-    margin: 20px;
-    padding:20px;
-    border: none;
+.tabla__row {
+    border-top: solid black;
 }
 
-.mapa{
-    width: 300px;
-    height: 300px;
+.tabla__row__programa{
+    font-size: var(--text-small);
 }
+
+/* -------------   CONTACTO   --------------*/
+
+/* -----------FORMULARIO -------------*/
+.formulario{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+ .formulario__elementos2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    }
+
+    .formulario__textarea{
+        margin-bottom: 2rem;
+    }
+
+    .formulario__boton{
+        margin-bottom: 1rem;
+    }
+
+
+
+/* ----------MEDIA QUERYS -----------*/
+
+/*           TABLETS          */
+@media (min-width: 768px) {
+
+    /*------------   INDEX   -------------*/
+    /*---------- PREVIEW ----------*/
+
+    .precategoria__titulo {
+
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    /* ---------- FOOTER ---------*/
+
+    .footer {
+        height: 250px;
+    }
+
+    .footer__pie {
+        color: aliceblue;
+        font-size: var(--text-small);
+        padding-bottom: 0;
+        height: 30px;
+    }
+
+    /* ----------    SOBRE MI    ------------*/
+    .tabla__tabla{
+        font-size: var(--text-small);
+    }
+    /* -----------FORMULARIO -------------*/
+
+    .formulario__elementos2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 30%;
+        padding-right: 30%;
+        margin-bottom: 1rem;
+
+    }
+}
+
+
+
+/*          DESKTOP              */
+@media (min-width: 992px) {
+
+    /* -------------------- INDEX ---------------*/
+    .grid__index {
+        display: grid;
+        grid-template-areas:
+            " header header header"
+            " nav nav nav"
+            " main main main"
+            " precategorias preview preview "
+            " footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*-----------PREVIEW-----------*/
+    .precategoria {
+        color: aliceblue;
+        background-color: rgb(4, 37, 58);
+        height: 38rem;
+        grid-area: precategorias;
+        text-align: center;
+
+    }
+
+    .precategoria__titulo {
+
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .precategoria__lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30%;
+        text-align: center;
+
+    }
+
+    .precategoria__lista li {
+
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+        width: 15rem;
+
+
+
+    }
+
+    .preview {
+        color: aliceblue;
+        background-color: rgb(4, 37, 58);
+        text-align: center;
+        padding: 2rem;
+        height: 38rem;
+        grid-area: preview;
+
+    }
+
+    .preview__img {
+
+
+        margin-top: 1.5rem
+    }
+
+    /*  ------ SOBRE MI ----------*/
+
+.tabla__row__programa{
+    font-weight: 500;
+}
+
+
+    }

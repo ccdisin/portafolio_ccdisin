@@ -7,14 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="/img/fav.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header id="arriba" class="header">
         <a href="../index.html"><img src="../img/logocc2.png" alt="Claudio Cocio Diseño" class="header__logo"></a>
-        <h1 class="header__titulo">Contacto</h1>
-        <h2 class="header__subtitulo">Conversemos sobre tus proyectos</h2>
+        <div class="header__encabezado">
+            <h1 class="header__titulo">Contacto</h1>
+            <h2 class="header__subtitulo">Conversemos sobre tus proyectos</h2>
+        </div>
         <nav class="header__menu">
             <ul class="header__menu__lista">
                 <a href="../index.html">
@@ -49,7 +57,7 @@
         </ul>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425998.14892663143!2d-70.9100195384674!3d-33.472472762753654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1654468892648!5m2!1ses-419!2scl"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="30%" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="mapa">Ubicación</iframe>
 
     </main>
@@ -57,42 +65,42 @@
         <h2 class="formulario__titulo">Formulario de cotización</h2>
         <form action="">
             <fieldset class="formulario__elementos">
-             
-                <legend class="formulario__legend">Ingresa tus datos de contacto</legend>
-                <label for="nombre" class="formulario__legend">Nombre</label>
-                <br>
-                <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
-                <br>
-                <label for="edad" class="formulario__legend">Edad</label>
-                <br>
-                <input type="number" min="18" max="99" name="edad" placeholder="Ingresa tu edad" required>
-                <br>
-                <label for="correo" class="formulario__legend">E-Mail</label>
-                <br>
-                <input type="email" name="correo" placeholder="Escribe tu correo electrónico" required>
-                <br>
-                <label for="cliente" class="formulario__legend">Tipo de cliente</label>
-                <br>
-                <select name="cliente" id="cliente">
-                    <option value="ind">Individual</option>
-                    <option value="emp">Emprendedor(a)</option>
-                    <option value="pym">PYME</option>
-                    <option value="empre">Empresa</option>
-                </select>
-                <br>
-                <label for="news" class="formulario__legend">¿Quieres recibir noticias?</label>
-                <br>
-                <input type="radio" name="news">Sí
-                <input type="radio" name="news">No
-                <br>
-                <label for="solicitud" class="formulario__legend">Solicitud</label>
-                <br>
-                <textarea name="solicitud" id="#" cols="80" rows="20"
-                    required>Escribe los servicios que te interesan y tu solicitud de cotización con una descripción del proyecto. Me pondré en contacto a la brevedad. Muchas gracias.</textarea>
-                <br>
-                <input type="submit" value="Cotiza">
-                <input type="reset" value="Limpiar formulario">
-            
+                <div class=" formulario__elementos2">
+                    <legend class="formulario__legend">Ingresa tus datos de contacto</legend>
+                    <label for="nombre" class="formulario__legend">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+
+                    <label for="edad" class="formulario__legend">Edad</label>
+
+                    <input type="number" min="18" max="99" name="edad" placeholder="Ingresa tu edad" required>
+
+                    <label for="correo" class="formulario__legend">E-Mail</label>
+
+                    <input type="email" name="correo" placeholder="Escribe tu correo electrónico" required>
+
+                    <label for="cliente" class="formulario__legend">Tipo de cliente</label>
+
+                    <select name="cliente" id="cliente">
+                        <option value="ind">Individual</option>
+                        <option value="emp">Emprendedor(a)</option>
+                        <option value="pym">PYME</option>
+                        <option value="empre">Empresa</option>
+                    </select>
+
+                    <label for="news" class="formulario__legend">¿Quieres recibir noticias?</label>
+
+                    <input type="radio" name="news">Sí
+                    <input type="radio" name="news">No
+
+                    <label for="solicitud" class="formulario__legend">Solicitud</label>
+
+                    <textarea name="solicitud" id="#" class="formulario__textarea" rows="20"
+                        required>Escribe los servicios que te interesan y tu solicitud de cotización con una descripción del proyecto. Me pondré en contacto a la brevedad. Muchas gracias.</textarea>
+
+                    <input type="submit" value="Cotiza" class="formulario__boton">
+                    <input type="reset" value="Limpiar formulario" class="formulario__boton">
+
+                </div>
 
             </fieldset>
         </form>
@@ -101,7 +109,7 @@
     <footer class="footer">
         <a href="#arriba" class="footer__botonarriba">Ir arriba</a>
         <nav class="footer__menu">
-            <ul>
+            <ul class="footer__nav">
                 <a href="../index.html">
                     <li>Inicio</li>
                 </a>
@@ -125,6 +133,10 @@
         <a href="../index.html"><img src="../img/logocc.png" alt="Claudio Cocio Diseño" class="footer__logo"></a>
         <p class="footer__pie">Sitio web desarrollado por CCDISIN </p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
