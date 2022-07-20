@@ -1,36 +1,9 @@
-* {
-    margin: 0%;
-    padding: 0%;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: montserrat;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-/*            Normalize             */
-:root {
-    /*   colors     */
-    --primary: rgb(0, 7, 149);
-    --secondary: rgb(255, 255, 255);
-    --alternative: rgb(6, 0, 59);
-    --text-color: rgb(91, 91, 91);
-
-    /*   spacing    */
-    --spacing-large: 6rem;
-    --spacing-medium: 2.4rem;
-    --spacing-small: 2rem;
-    --spacing-xsmall: 1rem;
-
-    /*   font sizes   */
-    --text-large: 5.2em;
-    --text-medium: 2.2em;
-    --text-base: 1.4em;
-    --text-small: 1.4em
-}
-
-/*           Mobile first          */
 ul {
     list-style-type: none;
 }
@@ -43,120 +16,57 @@ img {
     width: 100%;
 }
 
-/*  ------INDEX-----------*/
+html {
+    font-size: 80%;
+}
 
-.grid__index {
+
+/* ----  HEADER   ----*/
+
+.header{
+    justify-content: center;
+}
+
+/* NAV */
+.nav__background{
+    background-color: rgb(6, 6, 88);
+}
+
+.nav__button{
+    border-color: aliceblue;
+    background-color: rgb(6, 44, 75);
+    color: aliceblue;
+}
+
+/* ----  MAIN  ----*/
+
+.index__grid {
     display: grid;
     grid-template-areas:
-        " header header header"
-        " nav nav nav"
-        " main main main"
-        " precategorias precategorias precategorias "
-        " preview preview preview "
-        " footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
+        " precategorias preview";
+    grid-template-columns: 1fr 2fr ;
+    width: 100;
 }
 
-
-/* ----------- HEADER --------*/
-
-.header {
-    background-color: rgb(244, 244, 244);
-    color: rgb(228, 226, 226);
+.preview {
+    color: aliceblue;
+    background-color: rgb(4, 37, 58);
     text-align: center;
-    background-image: url(img/fondoheder.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    grid-area: header;
-
-}
-
-.header__logo {
-    width: 10rem;
-    margin: 1.5rem
-}
-
-.header__encabezado {
-    background-color: rgb(6, 44, 75);
+    padding: 2rem;
+    grid-area: preview;
 }
 
 
-.header__titulo {
-    text-transform: uppercase;
-    background-color: rgb(6, 44, 75);
-    padding-top: 0.5rem;
-    width: 100%;
-    background-size: cover;
+.preview__img{
+    width: 100;
 }
 
-.header__subtitulo {
-    margin-bottom: 4rem;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-    font-style: italic;
-    font-size: 18px;
-    background-color: rgb(6, 44, 75);
-    padding-top: 0.1rem;
-    padding-bottom: 0.5rem;
-    width: 100%;
-    background-size: cover;
-}
-
-.header__menu__lista {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.header__menu__lista1 {
-
-    padding: 5px 20px 3px 20px;
-
-    margin: 10px;
-    color: rgb(255, 255, 255);
-    border: 1px solid;
-    border-color: rgb(255, 255, 255);
-    width: 100px;
-    text-decoration: none;
-    border-radius: 20px;
-    background-image:linear-gradient(to bottom,  rgb(25, 69, 105)40%,black);
-
-}
-
-.header__menu__lista1:hover{
-    transform: scale(1.1,1.1);
-}
-
-
-
-
-
-/* ----------- MAIN --------*/
-
-main {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    grid-area: main;
-}
-
-/*-----------PREVIEW-----------*/
-
-/* ------ aqui la idea es seleccionar una categoria y ver una imagen preview de esa categoría, 
-deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto -----*/
-
-.precategoria {
+.precategoria{
+    padding: 1rem;
     color: aliceblue;
     background-color: rgb(4, 37, 58);
     grid-area: precategorias;
-
-
 }
-
 .precategoria__titulo {
 
     text-align: center;
@@ -169,6 +79,7 @@ deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 .precategoria__lista li {
@@ -176,25 +87,12 @@ deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto
     border: 1px dashed;
     text-decoration: none;
     list-style: none;
-    padding: 0.6rem;
+    padding: 0.4rem;
     width: fit-content;
-    margin: 0.5rem;
-
+    margin: 0.3rem;
 }
 
-.preview {
-    color: aliceblue;
-    background-color: rgb(4, 37, 58);
-    text-align: center;
-    padding: 2rem;
-    grid-area: preview;
-}
-
-.preview__img {
-    margin-top: 1rem
-}
-
-/*------------FOOTER--------*/
+/* ----  FOOTER   ----*/
 
 .footer {
     background-color: rgb(4, 21, 35);
@@ -249,8 +147,6 @@ deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto
     height: 30px;
 }
 
-
-
 /* -------------------SOBRE MI----------------------*/
 
 
@@ -259,8 +155,6 @@ deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto
 .grid__sobremi {
     display: grid;
     grid-template-areas:
-        " header header header"
-        " nav nav nav"
         " presentacion presentacion presentacion"
         " tabla tabla tabla"
         " footer footer footer";
@@ -273,9 +167,15 @@ deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto
     padding-right: 15%;
 }
 
+.presentacion__titulo{
+    text-align: center;
+    margin-top: 1rem;
+}
+
 .presentacion__text {
     font-size: var(--text-small);
     margin-top: 1rem;
+    text-align: center;
 }
 
 .tabla {
@@ -312,6 +212,7 @@ deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto
 .formulario{
     text-align: center;
     margin-bottom: 3rem;
+  
 }
 
  .formulario__elementos2{
@@ -332,129 +233,33 @@ deberia ser un menu dsplegable q me cambie la imagen pero por ahora es un boceto
         margin-bottom: 1rem;
     }
 
-
-
-/* ----------MEDIA QUERYS -----------*/
-
-/*           TABLETS          */
-@media (min-width: 768px) {
-
-    /*------------   INDEX   -------------*/
-    /*---------- PREVIEW ----------*/
-
-    .precategoria__titulo {
-
+    /* --- PORTAFOLIO ---*/
+    .portafolio__titulo{
         text-align: center;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin-top: 1rem;
     }
 
-    /* ---------- FOOTER ---------*/
 
-    .footer {
-        height: 250px;
+    /* ----- GALERIA -------*/
+    .galeria__titulo{
+        text-align: center;
+        margin-top: 1rem;
     }
 
-    .footer__pie {
-        color: aliceblue;
-        font-size: var(--text-small);
-        padding-bottom: 0;
-        height: 30px;
+    /*------ BLOG ---------*/
+    .blog__titulo{
+        text-align: center;
+        margin-top: 1rem;
     }
 
-    /* ----------    SOBRE MI    ------------*/
-    .tabla__tabla{
-        font-size: var(--text-small);
-    }
-    /* -----------FORMULARIO -------------*/
+    /* ----- CONTACTO ----*/
 
-    .formulario__elementos2{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    
+
+    .card {
+        text-align: center;
         justify-content: center;
-        padding-left: 30%;
-        padding-right: 30%;
+        margin-top: 1rem;
         margin-bottom: 1rem;
-
-    }
-}
-
-
-
-/*          DESKTOP              */
-@media (min-width: 992px) {
-
-    /* -------------------- INDEX ---------------*/
-    .grid__index {
-        display: grid;
-        grid-template-areas:
-            " header header header"
-            " nav nav nav"
-            " main main main"
-            " precategorias preview preview "
-            " footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /*-----------PREVIEW-----------*/
-    .precategoria {
-        color: aliceblue;
-        background-color: rgb(4, 37, 58);
-        height: 38rem;
-        grid-area: precategorias;
-        text-align: center;
-
-    }
-
-    .precategoria__titulo {
-
-        text-align: center;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-    }
-
-    .precategoria__lista {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 30%;
-        text-align: center;
-
-    }
-
-    .precategoria__lista li {
-
-        text-align: center;
-        text-decoration: none;
-        list-style: none;
-        width: 15rem;
-
-
-
-    }
-
-    .preview {
-        color: aliceblue;
-        background-color: rgb(4, 37, 58);
-        text-align: center;
-        padding: 2rem;
-        height: 38rem;
-        grid-area: preview;
-
-    }
-
-    .preview__img {
-
-
-        margin-top: 1.5rem
-    }
-
-    /*  ------ SOBRE MI ----------*/
-
-.tabla__row__programa{
-    font-weight: 500;
-}
-
-
+       justify-content: center;
     }
