@@ -1,0 +1,43 @@
+.presentacion {
+    @include flex-base(column, center, center);
+    text-align: center;
+    font-size: $font-size-texto;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    &__titulo{
+        margin-bottom: $spacing-small;
+        font-size: $font-size-titulo;
+        width: 50%;
+        margin-top: 3rem;
+    }
+    &__text{
+        margin-bottom: $spacing-small;
+        font-size: $font-size-texto;
+        width: 50%;
+    }
+}
+
+
+.tabla__titulo {
+    margin: auto;
+    margin-bottom: $spacing-small;
+    text-align: center;
+}
+
+
+.tabla__tabla {
+    text-align: center;
+    font-size: $font-size-texto;
+    margin: auto;
+    margin-bottom: $spacing-small;
+}
+
+.tabla__row__programa{
+    padding: $spacing-extrasmall;
+}
+
+.tabla__col{
+    padding: $spacing-extrasmall;
+    font-size: $font-size-texto;
+}

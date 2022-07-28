@@ -1,0 +1,66 @@
+.footer {
+
+    background-color: $color-primario;
+    height: fit-content;
+    padding: $spacing-small;
+    text-align: center;
+
+    &__elem {
+        @include flex_base (column,center, none);
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    &__boton {
+    
+        padding: 1rem;
+        margin: 0.5rem;
+        border: 2px solid $color-destacado;
+        border-radius: 30px;
+        font-size: $font-size-texto;
+        background-color: $color-secundario;
+        color: $color-primario;
+         &:hover{
+            background-color: $color-primario;
+         }
+
+
+    }
+
+    &__ul {
+        @include flex_base (row, center, center);
+        flex-wrap: wrap;
+
+
+    }
+
+    &__li {
+        font-size: $font-size-texto;
+        padding: $spacing-extrasmall;
+        margin: $spacing-extrasmall;
+        text-align: center;
+        &:hover{
+            transform: scale(1.2);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        &:visited{
+            color: $color-complementario;
+        }
+
+
+
+    }
+
+    &__logo {
+        width: 30%;
+    }
+
+    &__pie{
+        color: $color-secundario;
+        margin: $spacing-small;
+    }
+}

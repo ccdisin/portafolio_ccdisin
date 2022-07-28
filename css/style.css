@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* COLORES */
+/* TAMAÑOS TEXTO */
+/* FONT FAMILY  */
+/* SPACING */
+/* deberia importar la fuente   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "montserrat"; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  font-family: "montserrat";
+  color: #71a1f5; }
+
+img {
+  width: 100%; }
+
+.footer {
+  background-color: #191164;
+  height: fit-content;
+  padding: 2rem;
+  text-align: center; }
+  .footer__elem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center; }
+  .footer__boton {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 2px solid #71a1f5;
+    border-radius: 30px;
+    font-size: 1.5em;
+    background-color: #e8e8f0;
+    color: #191164; }
+    .footer__boton:hover {
+      background-color: #191164; }
+  .footer__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .footer__li {
+    font-size: 1.5em;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center; }
+    .footer__li:hover {
+      transform: scale(1.2);
+      font-weight: 500;
+      transition: 0.3s; }
+    .footer__li:visited {
+      color: #c59336; }
+  .footer__logo {
+    width: 30%; }
+  .footer__pie {
+    color: #e8e8f0;
+    margin: 2rem; }
+
+.proyecto__destacado {
+  text-align: center; }
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  justify-content: center;
+  margin: auto; }
+  .presentacion__titulo {
+    margin-bottom: 2rem;
+    font-size: 3em;
+    width: 50%;
+    margin-top: 3rem; }
+  .presentacion__text {
+    margin-bottom: 2rem;
+    font-size: 1.5em;
+    width: 50%; }
+
+.tabla__titulo {
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.tabla__tabla {
+  text-align: center;
+  font-size: 1.5em;
+  margin: auto;
+  margin-bottom: 2rem; }
+
+.tabla__row__programa {
+  padding: 1rem; }
+
+.tabla__col {
+  padding: 1rem;
+  font-size: 1.5em; }
