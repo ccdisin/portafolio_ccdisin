@@ -3,6 +3,11 @@
 @import "./misc/mixins";
 
 @import "./partials/footer";
+@import "./partials/header";
 
 @import "./views/index";
-@import "./views/sobremi.scss"
+@import "./views/sobremi.scss";
+@import "./views/portafolio";
+@import "./views/galeria";
+@import "./views/blog";
+@import "./views/contacto"

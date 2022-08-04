@@ -26,6 +26,7 @@ a {
 img {
   width: 100%; }
 
+/* ---- por hacer */
 .footer {
   background-color: #191164;
   height: fit-content;
@@ -112,3 +113,23 @@ img {
 .tabla__col {
   padding: 1rem;
   font-size: 1.5em; }
+
+.portafolio__titulo {
+  text-align: center;
+  margin: 2 rem;
+  padding: 5rem; }
+
+.galeria__titulo {
+  text-align: center;
+  margin: 2 rem;
+  padding: 5rem; }
+
+.blog__titulo {
+  text-align: center;
+  margin: 2 rem;
+  padding: 5rem; }
+
+.contacto__titulo {
+  text-align: center;
+  margin: 2 rem;
+  padding: 5rem; }

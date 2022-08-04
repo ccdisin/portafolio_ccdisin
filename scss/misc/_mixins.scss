@@ -4,3 +4,19 @@
     justify-content: $justify;
     align-items: $align;
 } 
+
+@mixin boton_1 ($color,$borde,$ancho,$alto){
+    width:$ancho;
+    height:$alto;
+    color: $colo;
+    border: $borde;
+    text-align: center;
+}
+
+/* ---- por hacer */
+@mixin titulos {
+    text-align: center;
+    margin: 2 rem;
+    padding: 5rem;
+}
+
