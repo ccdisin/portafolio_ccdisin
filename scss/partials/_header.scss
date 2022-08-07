@@ -1,0 +1,11 @@
+.header {
+
+    &__nav {
+        justify-content: center;
+    }
+
+}
+
+.nav__button {
+    @include boton_1
+}

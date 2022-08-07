@@ -26,9 +26,8 @@ a {
 img {
   width: 100%; }
 
-/* ---- por hacer */
 .footer {
-  background-color: #191164;
+  background-color: #040f33;
   height: fit-content;
   padding: 2rem;
   text-align: center; }
@@ -47,9 +46,9 @@ img {
     border-radius: 30px;
     font-size: 1.5em;
     background-color: #e8e8f0;
-    color: #191164; }
+    color: #040f33; }
     .footer__boton:hover {
-      background-color: #191164; }
+      background-color: #040f33; }
   .footer__ul {
     display: flex;
     flex-direction: row;
@@ -73,8 +72,54 @@ img {
     color: #e8e8f0;
     margin: 2rem; }
 
-.proyecto__destacado {
+.header__nav {
+  justify-content: center; }
+
+.nav__button {
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 2px solid #71a1f5;
+  border-radius: 30px;
+  font-size: 1.5em;
+  background-color: #e8e8f0;
+  color: #040f33; }
+  .nav__button:hover {
+    background-color: #040f33; }
+
+.destacado {
   text-align: center; }
+  .destacado__titulo {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.carousel .carousel-item {
+  height: 400px; }
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px; }
+
+.precategoria {
+  background-color: #040f33;
+  color: #e8e8f0;
+  padding: 1rem;
+  margin: auto; }
+  .precategoria__titulo {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .precategoria__boton {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 2px solid #71a1f5;
+    border-radius: 30px;
+    font-size: 1.5em;
+    background-color: #e8e8f0;
+    color: #040f33; }
+    .precategoria__boton:hover {
+      background-color: #040f33; }
 
 .presentacion {
   display: flex;
@@ -115,21 +160,17 @@ img {
   font-size: 1.5em; }
 
 .portafolio__titulo {
-  text-align: center;
-  margin: 2 rem;
-  padding: 5rem; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .galeria__titulo {
-  text-align: center;
-  margin: 2 rem;
-  padding: 5rem; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .blog__titulo {
-  text-align: center;
-  margin: 2 rem;
-  padding: 5rem; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .contacto__titulo {
-  text-align: center;
-  margin: 2 rem;
-  padding: 5rem; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }

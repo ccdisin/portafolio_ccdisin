@@ -16,16 +16,7 @@
 
     &__boton {
     
-        padding: 1rem;
-        margin: 0.5rem;
-        border: 2px solid $color-destacado;
-        border-radius: 30px;
-        font-size: $font-size-texto;
-        background-color: $color-secundario;
-        color: $color-primario;
-         &:hover{
-            background-color: $color-primario;
-         }
+        @include boton_1
 
 
     }

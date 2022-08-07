@@ -1,3 +1,35 @@
-.proyecto__destacado{
+.destacado {
     text-align: center;
+
+    &__titulo {
+        @include titulos
+    }
+
+}
+
+.carousel .carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+.precategoria {
+    background-color: $color-primario;
+    color: $color-secundario;
+    padding: $spacing-extrasmall;
+    margin: auto;
+
+    &__titulo {
+        @include titulos
+    }
+
+    &__boton {
+        @include boton_1
+    }
 }

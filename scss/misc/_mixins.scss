@@ -1,22 +1,26 @@
-@mixin flex_base ($direction,$justify,$align) {
+@mixin flex_base ($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-} 
-
-@mixin boton_1 ($color,$borde,$ancho,$alto){
-    width:$ancho;
-    height:$alto;
-    color: $colo;
-    border: $borde;
-    text-align: center;
 }
 
-/* ---- por hacer */
+@mixin boton_1 {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 2px solid $color-destacado;
+    border-radius: 30px;
+    font-size: $font-size-texto;
+    background-color: $color-secundario;
+    color: $color-primario;
+
+    &:hover {
+        background-color: $color-primario;
+    }
+}
+
+
 @mixin titulos {
-    text-align: center;
-    margin: 2 rem;
-    padding: 5rem;
+    margin-top: $spacing-extrasmall;
+    margin-bottom: $spacing-extrasmall;
 }
-
