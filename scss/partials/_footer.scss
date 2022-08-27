@@ -6,7 +6,7 @@
     text-align: center;
 
     &__elem {
-        @include flex_base (column,center, none);
+        @include flex_base (column, center, none);
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
@@ -15,15 +15,15 @@
 
 
     &__boton {
-    
+
         @include boton_1
-
-
     }
 
     &__ul {
         @include flex_base (row, center, center);
         flex-wrap: wrap;
+        padding-left: 0%;
+
 
 
     }
@@ -33,12 +33,14 @@
         padding: $spacing-extrasmall;
         margin: $spacing-extrasmall;
         text-align: center;
-        &:hover{
+
+        &:hover {
             transform: scale(1.2);
             font-weight: 500;
             transition: 0.3s;
         }
-        &:visited{
+
+        &:visited {
             color: $color-complementario;
         }
 
@@ -50,8 +52,10 @@
         width: 30%;
     }
 
-    &__pie{
+    &__pie {
         color: $color-secundario;
         margin: $spacing-small;
     }
+
+
 }

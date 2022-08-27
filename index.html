@@ -25,23 +25,21 @@
 
 <!--  Body  -->
 
-<body>
+<body class="index__body">
 
     <!-- Header -->
     <header id="arriba" class="header">
-        <div class="container-fluid">
+        <div class="container-fluid header__back">
             <nav class="navbar  navbar-expand-lg bg-light header__nav">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <nav class="navbar bg-light">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="/index.html">
-                                    <img src="img/logocc2.png" alt=" logo cc disin" width="150" height="150"
-                                        class="d-inline-block align-text-center">
-                            </div>
-                        </nav>
-
-                    </a>
+                <div class="container-fluid ">
+                    <nav class="navbar bg-light ">
+                        <div class="container-fluid header__container">
+                            <a class="navbar-brand" href="/index.html">
+                                <img src="img/logocc2.png" alt=" logo cc disin" width="150" height="150"
+                                    class="d-inline-block align-text-center">
+                            </a>
+                        </div>
+                    </nav>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -51,34 +49,33 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                            <a class="nav-link active header__link" aria-current="page" href="index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/sobremi.html">SOBRE MI</a>
+                            <a class="nav-link header__link" href="pages/sobremi.html">SOBRE MI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/portafolio.html">PORTAFOLIO</a>
+                            <a class="nav-link header__link" href="pages/portafolio.html">PORTAFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/galeria.html">GALERÍA</a>
+                            <a class="nav-link header__link" href="pages/galeria.html">GALERÍA</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                            <a class="nav-link header__link" href="pages/contacto.html">CONTACTO</a>
                         </li>
 
 
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <form class="d-flex nav__searchbar" role="search">
+                        <input class="form-control me-2 nav__placeholder" type="search" placeholder="Buscar"
+                            aria-label="Search">
                         <button class="btn btn-outline-success nav__button" type="submit">Buscar</button>
                     </form>
                 </div>
         </div>
         </nav>
-        
+
 
     </header>
 
@@ -106,23 +103,24 @@
                     <div class="carousel-item active">
                         <img src="img/slider0.jpg" class="d-block w-100 " alt="nuevo proyecto web">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>PROYECTO DESTACADO: DESARROLLO WEB</h5>
-                            <p>Dando los primeros pasos en el mundo del código.</p>
+                            <h5 class="carousel__titulo">PROYECTO DESTACADO: DESARROLLO WEB</h5>
+                            <p class="carousel__bajada">Dando los primeros pasos en el mundo del código.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slider1.jpg" class="d-block w-100" alt="mockup proyecto web">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>DIFERENTES VERSIONES</h5>
-                            <p>Aprendiendo a usar diferentes tecnologías vemos las aplicaciones posibles y cómo lograr
+                            <h5 class="carousel__titulo">DIFERENTES VERSIONES</h5>
+                            <p class="carousel__bajada">Aprendiendo a usar diferentes tecnologías vemos las aplicaciones
+                                posibles y cómo lograr
                                 distintos resultados.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slider2.jpg" class="d-block w-100" alt="codigo html">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>EL ORIGEN</h5>
-                            <p>Comenzamos con lo básico, estructura html.</p>
+                            <h5 class="carousel__titulo">EL ORIGEN</h5>
+                            <p class="carousel__bajada">Comenzamos con lo básico, estructura html.</p>
                         </div>
                     </div>
                 </div>
@@ -137,33 +135,23 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-            <!-- Preview  -->
-            <div class="index__grid">
-                <section class="precategoria">
-                    <h2 class="precategoria__titulo">Preview de proyectos</h2>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle precategoria__boton" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Categorías de proyectos
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Diseño Industrial</a></li>
-                            <li><a class="dropdown-item" href="#">Fabricación CAM</a></li>
-                            <li><a class="dropdown-item" href="#">3D</a></li>
-                            <li><a class="dropdown-item" href="#">Diseño Gráfico</a></li>
-                            <li><a class="dropdown-item" href="#">WEB</a></li>
-                            <li><a class="dropdown-item" href="#">Programación</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="preview">
-                    <h3 class="preview__titulo">Introducción al desarrollo web</h3>
-                    <img src="img/proweb.jpg" alt="codigo html" class="preview__img">
-                </section>
-
         </section>
+        <!-- Programas  -->
+        <div class="index__grid">
+            <section class="precategoria">
+                <h2 class="precategoria__titulo">Enfoque de diseño</h2>
+                <p class="precategoria__parrafo">Como diseñador me gusta trabajar en proyectos de distinto tipo, y para eso mi enfoque profesional se
+                    centra en la observación y capacidad de analisis, resolución de problemas y desarrollo de productos.
+                    Para esto es clave la competencia en herramientas digitales que permitan interactuar con la
+                    industria, calcular y comunicar las diversas ideas. </p>
+                    <p class="precategoria__parrafo">
+                        En este sentido mis ejes son Adobe illustrator para desarrollo de elementos gráficos y Autodesk
+                        Inventor para el modelamiento 3D. </p>
+
+
+            </section>
         </div>
+
     </main>
 
     <!-- Footer -->
@@ -187,9 +175,6 @@
                     </a>
                     <a href="pages/contacto.html">
                         <li class="footer__li">Contacto</li>
-                    </a>
-                    <a href="pages/blog.html">
-                        <li class="footer__li">Blog</li>
                     </a>
                 </ul>
             </nav>

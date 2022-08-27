@@ -27,17 +27,18 @@
     <!-- Header -->
 
     <header id="arriba" class="header">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <nav class="navbar bg-light">
-                        <div class="container-fluid">
+        <div class="container-fluid header__back">
+            <nav class="navbar  navbar-expand-lg bg-light header__nav">
+                <div class="container-fluid ">
+                    <nav class="navbar bg-light ">
+                        <div class="container-fluid header__container">
                             <a class="navbar-brand" href="../index.html">
                                 <img src="../img/logocc2.png" alt=" logo cc disin" width="150" height="150"
                                     class="d-inline-block align-text-center">
+                            </a>
                         </div>
                     </nav>
-                </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -46,54 +47,53 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link active header__link" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobremi.html">SOBRE MI</a>
+                            <a class="nav-link header__link" href="sobremi.html">SOBRE MI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portafolio.html">PORTAFOLIO</a>
+                            <a class="nav-link header__link" href="portafolio.html">PORTAFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">GALERÍA</a>
+                            <a class="nav-link header__link" href="galeria.html">GALERÍA</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            <a class="nav-link header__link" href="contacto.html">CONTACTO</a>
                         </li>
 
 
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <form class="d-flex nav__searchbar" role="search">
+                        <input class="form-control me-2 nav__placeholder" type="search" placeholder="Buscar"
+                            aria-label="Search">
                         <button class="btn btn-outline-success nav__button" type="submit">Buscar</button>
                     </form>
                 </div>
-            </div>
+        </div>
         </nav>
 
-    </header>
 
+    </header>
     <!-- Main -->
-    
+
     <main>
-        <div class="presentacion"> 
-        <h1 class="presentacion__titulo">Mi nombre es Claudio</h1>
-        <p class="presentacion__text">Soy diseñador industrial de profesión y me apasiona el aprendizaje
-            tanto como
-            explorar nuevas
-            herramientas
-            creativas, por lo que me he desempeñado también en otras áreas relativas a la industria.
-            Me gustan las actividades al aire libre, la comida, la tecnología y las artes.
-        </p>
-    </div>
+        <div class="presentacion">
+            <h1 class="presentacion__titulo">Mi nombre es Claudio</h1>
+            <p class="presentacion__text">Soy diseñador industrial de profesión, me apasiona el aprendizaje
+                y
+                explorar nuevas
+                herramientas
+                creativas, por lo que me he desempeñado también en otras áreas relativas a la industria.
+                Me gustan las actividades al aire libre, la comida, la tecnología y las artes.
+            </p>
+        </div>
 
         <section class="tabla">
             <h2 class="tabla__titulo">Manejo de herramientas digitales</h2>
 
-            <table border="3px" cellpadding="6px" cellspacing="4px" class="tabla__tabla">
+            <table cellpadding="6px" cellspacing="4px" class="tabla__tabla">
                 <tr class="tabla__row">
                     <td class="tabla__col">PROGRAMA</td>
                     <td class="tabla__col">NIVEL</td>
@@ -141,6 +141,8 @@
 
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__elem">
             <a href="#arriba" class="footer__boton">Ir arriba</a>
@@ -161,9 +163,7 @@
                     <a href="contacto.html">
                         <li class="footer__li">Contacto</li>
                     </a>
-                    <a href="blog.html">
-                        <li class="footer__li">Blog</li>
-                    </a>
+                    
                 </ul>
             </nav>
             <a href="../index.html"><img src="../img/logocc.png" alt="Claudio Cocio Diseño" class="footer__logo"></a>

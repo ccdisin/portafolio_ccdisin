@@ -5,16 +5,18 @@
     width: 100%;
     justify-content: center;
     margin: auto;
-    &__titulo{
-        margin-bottom: $spacing-small;
-        font-size: $font-size-titulo;
-        width: 50%;
-        margin-top: 3rem;
+
+    &__titulo {
+        @include titulos;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
-    &__text{
+
+    &__text {
         margin-bottom: $spacing-small;
         font-size: $font-size-texto;
-        width: 50%;
+        width: 70%;
+        text-align: justify;
     }
 }
 
@@ -23,6 +25,7 @@
     margin: auto;
     margin-bottom: $spacing-small;
     text-align: center;
+    font-size: $font-size-subti;
 }
 
 
@@ -31,13 +34,18 @@
     font-size: $font-size-texto;
     margin: auto;
     margin-bottom: $spacing-small;
+    border: solid 3px $color-destacado;
+    width: 80%;
+    padding: 3rem;
+
+
 }
 
-.tabla__row__programa{
+.tabla__row__programa {
     padding: $spacing-extrasmall;
 }
 
-.tabla__col{
+.tabla__col {
     padding: $spacing-extrasmall;
     font-size: $font-size-texto;
 }

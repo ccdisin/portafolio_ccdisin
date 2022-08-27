@@ -1,3 +1,103 @@
-.contacto__titulo{
-    @include titulos
+.contacto {
+
+    &__contenido {
+        text-align: center;
+    }
+
+    &__titulo {
+        @include titulos;
+        margin-bottom: 1rem;
+    }
+
+    &__ficha {
+        margin: 2rem;
+        margin-top: 0%;
+        border: none;
+    }
+
+    &__foto {
+        padding: 4.2rem;
+    }
+
+    &__nombre {
+        font-size: $font-size-subti;
+    }
+
+    &__bajada {
+        font-size: $font-size-subti;
+        color: $color-primario;
+
+    }
+
+    &__li {
+        font-size: 2rem;
+        border: none;
+
+    }
+
+
+    &__ubicacion {
+        font-size: $font-size-subti;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__mapa {
+        width: 75%;
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.formulario {
+    text-align: center;
+    justify-content: center;
+
+    &__titulo {
+        font-size: $font-size-subti;
+    }
+
+    &__legend {
+        font-size: 2.2em;
+    }
+
+    &__legend2{
+        font-size: 1.8em;
+        padding: 1rem;
+        margin: auto;
+        width: 100%;
+    }
+
+    &__input{
+        font-size: 1.8em;
+        width: 280px;
+        border: solid 1px black;
+        text-align: center;
+    }
+
+    &__input2{
+        font-size: 1.8em;
+        justify-content: space-between;
+        
+    }
+
+    &__check{
+        margin: 1.5rem;
+    }
+
+    &__textarea{
+    
+        width: 80%;
+        padding: 1rem;
+        margin: auto;
+        border: solid 1px black;
+    }
+
+    &__boton{
+        @include boton_1;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
 }

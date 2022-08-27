@@ -1,8 +1,18 @@
+.index__body{
+    background-color: $color-primario;
+}
+
 .destacado {
     text-align: center;
+    background-color: $color-primario;
+    margin-top: 0%;
 
     &__titulo {
-        @include titulos
+        @include titulos;
+        color: $color-secundario;
+        padding: 1rem;
+
+
     }
 
 }
@@ -17,11 +27,24 @@
     top: 0;
     left: 0;
     min-height: 500px;
+
 }
 
+.carousel {
+
+    &__titulo {
+        font-size: 2.2em;
+    }
+
+    &__bajada {
+        font-size: $font-size-texto;
+    }
+}
+
+
 .precategoria {
-    background-color: $color-primario;
-    color: $color-secundario;
+    background-color: $color-secundario;
+    color: $color-primario;
     padding: $spacing-extrasmall;
     margin: auto;
 
@@ -31,5 +54,11 @@
 
     &__boton {
         @include boton_1
+    }
+
+    &__parrafo{
+        font-size: $font-size-texto;
+        text-align: center;
+        padding: 1.5rem;
     }
 }

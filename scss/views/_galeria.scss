@@ -1,3 +1,17 @@
-.galeria__titulo{
-    @include titulos
+.galeria {
+    &__titulo {
+        @include titulos
+    }
+
+    &__img {
+
+        padding: $spacing-extrasmall;
+        margin-bottom: $spacing-extrasmall/2;
+
+    }
+
+    &img {
+        width: 100%;
+    }
+
 }

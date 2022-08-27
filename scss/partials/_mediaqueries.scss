@@ -1,0 +1,75 @@
+/* mobile first */
+
+
+@media (min-width: 414px) {
+
+    /* --de la seccion contacto --*/
+    .formulario__textarea {
+        margin: 10%;
+
+    }
+}
+
+/* tablets*/
+
+@media (min-width: 600px) {
+
+    /* --de la seccion contacto --*/
+    .contacto__foto {
+        width: 550px;
+        margin: auto;
+    }
+
+    .formulario__textarea {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /*--de la seccion portafolio--*/
+    .portafolio__ficha {
+        width: 421px;
+        margin: 2%;
+        margin-bottom: 5%;
+    }
+
+    .portafolio__grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* desktop */
+
+@media (min-width: 992px) {
+
+    /* -- de la sección index --*/
+    .precategoria__parrafo {
+        width: 972px;
+        margin: auto;
+    }
+
+    /*-- de la sección sobre mi --*/
+    .presentacion__text {
+        width: 630px;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    .tabla__tabla{
+        width: 727.6px;
+    }
+
+    /*--de la seccion contacto--*/
+    .contacto__mapa{
+        width:744px;
+        
+    }
+    .formulario__textarea{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+}

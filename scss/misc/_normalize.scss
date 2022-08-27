@@ -1,29 +1,30 @@
 /* deberia importar la fuente   */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: $fuente-texto;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     font-family: $fuente-texto;
     color: $color-destacado;
 }
 
-img{
+img {
     width: 100%;
 }

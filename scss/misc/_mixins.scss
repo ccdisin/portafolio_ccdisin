@@ -21,6 +21,9 @@
 
 
 @mixin titulos {
-    margin-top: $spacing-extrasmall;
-    margin-bottom: $spacing-extrasmall;
+    text-transform: uppercase;
+    font-size: $font-size-titulo;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
 }

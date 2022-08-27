@@ -20,18 +20,20 @@
 </head>
 
 <body>
+    <!-- header -->
     <header id="arriba" class="header">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <nav class="navbar bg-light">
-                        <div class="container-fluid">
+        <div class="container-fluid header__back">
+            <nav class="navbar  navbar-expand-lg bg-light header__nav">
+                <div class="container-fluid ">
+                    <nav class="navbar bg-light ">
+                        <div class="container-fluid header__container">
                             <a class="navbar-brand" href="../index.html">
-                                <img src="../img/logocc2.png" alt="logo cc disin" width="150" height="150"
+                                <img src="../img/logocc2.png" alt=" logo cc disin" width="150" height="150"
                                     class="d-inline-block align-text-center">
+                            </a>
                         </div>
                     </nav>
-                </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -40,90 +42,101 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link active header__link" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobremi.html">SOBRE MI</a>
+                            <a class="nav-link header__link" href="sobremi.html">SOBRE MI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portafolio.html">PORTAFOLIO</a>
+                            <a class="nav-link header__link" href="portafolio.html">PORTAFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">GALERÍA</a>
+                            <a class="nav-link header__link" href="galeria.html">GALERÍA</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            <a class="nav-link header__link" href="contacto.html">CONTACTO</a>
                         </li>
 
 
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <form class="d-flex nav__searchbar" role="search">
+                        <input class="form-control me-2 nav__placeholder" type="search" placeholder="Buscar"
+                            aria-label="Search">
                         <button class="btn btn-outline-success nav__button" type="submit">Buscar</button>
                     </form>
                 </div>
-            </div>
+        </div>
         </nav>
 
+
     </header>
+    <!-- main -->
     <main class="contacto__contenido">
         <h1 class="contacto__titulo">Contacto</h1>
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="../img/foto-perfil.jpg" class="card-img-top" alt="foto de presentacion">
-            <div class="card-body">
-                <h5 class="card-title">CLAUDIO COCIO</h5>
-                <p class="card-text">Conversemos sobre tus proyectos</p>
+        <div class="card mx-auto contacto__ficha">
+            <img src="../img/35407_1448626689911_2512748_n.jpg" class="card-img-top contacto__foto"
+                alt="foto de presentacion">
+            <div class="card-body contacto__card">
+                <h5 class="card-title contacto__nombre">CLAUDIO COCIO</h5>
+                <p class="card-text contacto__bajada">Conversemos sobre tus proyectos</p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Correo: cc.disin@gmail.com</li>
-                <li class="list-group-item">Instagram: /cc.disin</li>
-                <li class="list-group-item">Ubicación: Santiago de Chile</li>
+                <li class="list-group-item contacto__li">Correo: cc.disin@gmail.com</li>
+                <li class="list-group-item contacto__li">Instagram: /cc.disin</li>
+                <li class="list-group-item contacto__li">Ubicación: Santiago de Chile</li>
             </ul>
 
         </div>
+
+        <h2 class="contacto__ubicacion">Ubicación</h2>
+
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425998.14892663143!2d-70.9100195384674!3d-33.472472762753654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1654468892648!5m2!1ses-419!2scl"
-            width="100%" height="30%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="mapa">Ubicación</iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="contacto__mapa"></iframe>
 
     </main>
+
+    <!-- formulario -->
+
     <section class="formulario">
         <h2 class="formulario__titulo">Formulario de cotización</h2>
         <form action="">
             <fieldset class="formulario__elementos">
                 <div class=" formulario__elementos2">
                     <legend class="formulario__legend">Ingresa tus datos de contacto</legend>
-                    <label for="nombre" class="formulario__legend">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+                    <label for="nombre" class="formulario__legend2">Nombre</label>
+                    <input class="formulario__input" type="text" name="nombre" placeholder="Escribe tu nombre" required>
 
-                    <label for="edad" class="formulario__legend">Edad</label>
+                    <label for="edad" class="formulario__legend2">Edad</label>
 
-                    <input type="number" min="18" max="99" name="edad" placeholder="Ingresa tu edad" required>
+                    <input class="formulario__input" type="number" min="18" max="99" name="edad"
+                        placeholder="Ingresa tu edad" required>
 
-                    <label for="correo" class="formulario__legend">E-Mail</label>
+                    <label for="correo" class="formulario__legend2">E-Mail</label>
 
-                    <input type="email" name="correo" placeholder="Escribe tu correo electrónico" required>
+                    <input class="formulario__input" type="email" name="correo"
+                        placeholder="Escribe tu correo electrónico" required>
 
-                    <label for="cliente" class="formulario__legend">Tipo de cliente</label>
+                    <label for="cliente" class="formulario__legend2">Tipo de cliente</label>
 
-                    <select name="cliente" id="cliente">
+                    <select class="formulario__input" name="cliente" id="cliente">
                         <option value="ind">Individual</option>
                         <option value="emp">Emprendedor(a)</option>
                         <option value="pym">PYME</option>
                         <option value="empre">Empresa</option>
                     </select>
 
-                    <label for="news" class="formulario__legend">¿Quieres recibir noticias?</label>
+                    <label for="news" class="formulario__legend2">¿Quieres recibir noticias?</label>
+                    <div class="formulario__input2">
 
-                    <input type="radio" name="news">Sí
-                    <input type="radio" name="news">No
+                        <input class="formulario__check" type="radio" name="news">Sí
+                        <input class="formulario__check" type="radio" name="news">No
+                    </div>
+                    <label for="solicitud" class="formulario__legend2">Solicitud</label>
 
-                    <label for="solicitud" class="formulario__legend">Solicitud</label>
-
-                    <textarea name="solicitud" id="#" class="formulario__textarea" rows="20"
+                    <textarea name="solicitud" id="#" class="formulario__textarea formulario__input " rows="20"
                         required>Escribe los servicios que te interesan y tu solicitud de cotización con una descripción del proyecto. Me pondré en contacto a la brevedad. Muchas gracias.</textarea>
 
                     <input type="submit" value="Cotiza" class="formulario__boton">
@@ -135,6 +148,7 @@
         </form>
 
     </section>
+    <!-- footer -->
     <footer class="footer">
         <div class="footer__elem">
             <a href="#arriba" class="footer__boton">Ir arriba</a>
@@ -155,9 +169,7 @@
                     <a href="contacto.html">
                         <li class="footer__li">Contacto</li>
                     </a>
-                    <a href="blog.html">
-                        <li class="footer__li">Blog</li>
-                    </a>
+
                 </ul>
             </nav>
             <a href="../index.html"><img src="../img/logocc.png" alt="Claudio Cocio Diseño" class="footer__logo"></a>
